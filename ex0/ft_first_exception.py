@@ -12,11 +12,11 @@ def test_temperature() -> None:
 
     print(f"Input data is '{valid_str}'")
     try:
-        input_temperature(valid_str)
+        valid_temp = input_temperature(valid_str)
     except ValueError as e:
-        print(f"{e}")
+        print(f"Caught input_temperature error: {e}")
     else:
-        print(f"Temperature is now {valid_str}°C")
+        print(f"Temperature is now {valid_temp}°C")
 
     print("\n")
     print(f"Input data is '{invalid_str}'")
